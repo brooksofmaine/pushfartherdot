@@ -1,0 +1,58 @@
+.iconic {
+  width: 20px;
+  float: left;
+  vertical-align: text-bottom;
+}
+
+body {
+  background-color: #F2E6DC;
+  font:  300 100%/1.6 'Open Sans Condensed',sans-serif;
+  font-size: 17px;
+}
+
+img {
+  padding: 0px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #DBD2CA;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px #DBD2CA;
+}
+
+.drawing {
+border-width:0;
+box-shadow: 0px 0px 0px;
+}
+
+
+#pfp-brand {
+  font-size: 122%;
+  font-weight: bold;
+}
+
+/* to control size of h5 element */
+
+h5 {
+  font-size: 111%;
+}
+
+/* to control size of first letter of paragraphs */
+
+.big-letter {
+  font-size: 122%;
+}
+
+/* for floating images around text */
+
+.left-bord {
+  width: 15%;
+  margin-right: 22px;
+  float: left;
+}
+
+.right-bord {
+  width: 22%;
+  border: 0px;
+  float: right;
+}
+
