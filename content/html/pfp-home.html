@@ -3,21 +3,19 @@
       <div class = "col-md-2">
       </div>
       <div class = "col-md-3">
+             Kickstarter Countdown: 
+            <p id = "daysLeft">hoho</p>
+            <p> days remaining</p>
+      </div>
+  </div>
+  <div class="row">
+      <div class = "col-md-2">
+      </div>
+      <div class = "col-md-3">
           <p><strong><em>Upcoming Concerts and Live Songwriting Sessions:</em></strong></p>
           </div>
           <div class = "col-md-5">
-           <p>
-              <strong>Saturday, July 16, 8 pm</strong><br>
-              Cuthbert Amphitheater<br>
-              Eugene, Oregon<br>
-              Nora Willauer with the Eugene Symphony
-            </p>
-            <p>
-              <strong>Monday, July 18, 7:30 pm</strong><br>
-              Bohemia Park<br>
-              Cottage Grove, Oregon<br>
-              Nora Willauer with the Eugene Symphony
-            </p>
+           
              <p>
               <strong>Tuesday, July 19, 7:30 pm</strong><br>
               Stewart Park<br>
@@ -64,7 +62,18 @@
             </p>
           
  <!--           <div class = "col-md-5">
-
+              <p>
+              <strong>Saturday, July 16, 8 pm</strong><br>
+              Cuthbert Amphitheater<br>
+              Eugene, Oregon<br>
+              Nora Willauer with the Eugene Symphony
+            </p>
+            <p>
+              <strong>Monday, July 18, 7:30 pm</strong><br>
+              Bohemia Park<br>
+              Cottage Grove, Oregon<br>
+              Nora Willauer with the Eugene Symphony
+            </p>
             <p>
               <strong>Sunday, July 10th, 4 to 5:30 pm</strong><br>
              Barnswallow Books<br>
@@ -112,10 +121,16 @@
   </div>
   <div class="row"><div class = "col-md-2">
       </div>
+        <div class = "col-md-8">
+        <img class = "img-responsive" src = "./content/images/pf-kick-sq.jpg">  
+        photo by Devon Gordon
+      </div>
+      <!--  
       <div class = "col-md-8">
-        <img class = "img-responsive" src = "./content/images/pf-by-jack-churchill.jpg">  
+      <img class = "img-responsive" src = "./content/images/pf-by-jack-churchill.jpg">  
         photo by Jack Churchill
       </div>
+        -->
       <div class = "col-md-2">
       </div>
   </div>
@@ -147,7 +162,26 @@ video by Dana Rae Warren
   </div>
 </div>
 
+<script>
+  
+ var daysDiff = function() {
+  //Get 1 day in milliseconds
+  var one_day=1000*60*60*24;
+  // Convert both dates to milliseconds
+  var endDate = new Date(2016, 07, 13, 0, 0, 0, 0);
+  var today = new Date();
+  // Calculate the difference in milliseconds
+  var difference_ms = endDate - today;
+  // Convert back to days and return
+ var difference_ds = Math.round(difference_ms/one_day); 
+  return difference_ds;
+}
 
+//date counter for kickstarter
+var daysRemaining = String(daysDiff());
+document.getElementById("daysLeft").innerHTML = daysRemaining;
+  
+</script>
 
 
 
