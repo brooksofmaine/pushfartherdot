@@ -4,8 +4,8 @@
       </div>
       <div class = "col-md-3">
              Kickstarter Countdown: 
-            <p id = "daysLeft">hoho</p>
-            <p> days remaining</p>
+            <span id = "daysLeft">hoho</span> 
+             days remaining
       </div>
   </div>
   <div class="row">
@@ -163,8 +163,7 @@ video by Dana Rae Warren
 </div>
 
 <script>
-  
- var daysDiff = function() {
+  var daysDiff = function() {
   //Get 1 day in milliseconds
   var one_day=1000*60*60*24;
   // Convert both dates to milliseconds
@@ -180,7 +179,6 @@ video by Dana Rae Warren
 //date counter for kickstarter
 var daysRemaining = String(daysDiff());
 document.getElementById("daysLeft").innerHTML = daysRemaining;
-  
 </script>
 
 
